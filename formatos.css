@@ -1,0 +1,164 @@
+/* Estilos de las etiquetas semánticas principales */
+header, footer, nav, section, aside {
+	color: #000;
+	border-radius: 5px;
+	padding: 20px;
+	font-size: 150%;
+	margin: 5px;
+    background: #f8f2ee;
+    border-bottom: 3px solid #f2eae5;
+}
+
+.site-title {
+    margin: 0;
+    font-size: 80px;
+    font-family: Ohioh, sans-serif;
+    line-height: 1;
+    color: #000;
+    text-transform: none;
+    letter-spacing: 0;
+    font-size: 68px;
+    text-align: center;
+}
+
+/* Estilos del contenedor section. Se utiliza un id porque solo se va aplicar a este elemento */
+#principal {
+	display: flex;
+	flex-direction: column;
+}
+
+/* Estilos del contenedor nav */
+#menu {
+	flex-direction: column;
+    position: relative;
+    transition: all 300ms ease;
+    text-align: center;
+    padding-left: 100px;
+    padding-right: 100px;
+    box-sizing: border-box;
+    flex-basis: 10%;
+	display: flex;
+}
+
+nav ul {
+	/* Para posicionar la lista en una fila */
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	list-style: none;
+	margin: 10; 
+	background-color: #ebe9eb;
+}
+
+nav li {
+	padding: 1em;
+}
+
+nav ul a {
+	text-decoration: none;
+	color: #515151
+}
+
+/* Estilos del contenedor aside para los iconos */
+#contenedor-iconos {
+	flex-basis: 20%;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	text-align: center;
+}
+
+/* Estilos del footer */
+footer {
+	position: relative;
+}
+
+
+/* Estilos para que el texto rodee a la imagen. Propiedad float */
+.imagen-float {
+	max-width: 20%;
+	float: right;
+}
+
+.fin-float {
+	clear: both;
+}
+
+/* Estilos para los iconos del aside */
+.titulo-iconos {
+	width: 100%;	
+}
+
+.contenedor-icono {
+	width: 33%;
+    display:inline-flex; 
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+}
+
+.icono {
+    width: 100%;
+    height: 100%;
+}
+
+
+/* Estilos para el formulario de contacto.*/
+form {padding: 20px;}
+
+label {margin: 15px 0px; clear: both; display: block;}
+
+input {padding: 4px; border: solid 1px #262626;}
+
+placeholder, option, value {color: #31a3dd; font-weight: bold;}
+
+focus {border-color: #31a3dd; }
+
+input[type="submit"] {padding: 10px 20px; text-transform: uppercase; cursor: pointer; background-color: #31a3dd; border: solid 1px #ededed;}
+
+input[type="submit"]:hover {background-color: #82C8EA;}
+
+/* Estilos para la sección de noticias.*/
+html {
+    font-family: sans-serif;
+}
+  
+.columns {
+    display: flex;
+}
+  
+.column {
+    background: #eee;
+    border: 5px solid #ccc;
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    padding: 10px;
+}
+  
+.main-column {
+    flex: 2;
+}
+  
+.article {
+    background: #ebe9eb;
+    border: 5px solid #515151;
+    color: #3a3a3a;
+    flex: 1;
+    margin: 10px;
+    padding: 30px;
+    justify-content: space-between;
+   
+}
+
+.fcc-btn {
+    background-color: #a46497;
+    color: #3a3a3a;
+    padding: 15px 25px;
+    text-decoration: none;
+}
+
+.fcc-btn:hover {
+    background-color: #223094;
+}
